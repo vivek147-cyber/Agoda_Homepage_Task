@@ -1,0 +1,983 @@
+header {
+    height: 116px;
+}
+
+.header__navbar {
+    background-color: #fff;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 0 24px;
+}
+.header__navbar-left {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.LogoAndLinksMenu {
+    width: 89px;
+    height: 37px;
+}
+
+.header__navbar-list {
+    padding-left: 0px;
+    margin: 0px;
+    list-style: none;
+    display: flex;
+}
+
+.header__navbar-subitem {
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.header__navbar-item {
+    display: inline-block;
+    margin-left: 24px;
+    font-size: 1.3rem;
+    line-height: 6.0rem;
+    color: var(--text-color);
+    cursor: pointer;
+    font-weight:700 
+}
+
+.header__navbar-item-feature {
+    position: absolute;
+    top: 0px;
+    border: 1px solid #ccc;
+    height: 23.56px;
+}
+.header__navbar-item-new-feature {
+    position: relative;
+    height: 100%;
+}
+.header__navbar-item-new-feature::before {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+    border-top: 5px solid rgb(180, 36, 36);
+    border-left: 5px solid transparent;
+}
+
+
+.header__navbar-item:hover {
+    color: #5392f9;
+}
+
+
+/** header button*/
+.btn-place {
+    border: 1px solid #ff567d;
+    color: #ff567d;
+}
+
+.btn-place:hover {
+    background-color: #ff567d;
+}
+.btn-signin {
+    color: rgb(83, 146, 249);
+    transition: all 0.15s ease-in-out 0s;
+}
+.btn-signin:hover {
+    background-color: rgb(83, 146, 249);
+    opacity: 0.7;
+}
+.btn-create {
+    margin-right: 4px;
+    border: 1px solid rgb(83, 146, 249);
+    color: rgb(83, 146, 249);
+    transition: all 0.15s ease-in-out 0s;
+}
+
+.btn-create:hover {
+    background-color: rgb(83, 146, 249);
+    opacity: 0.7;
+}
+
+
+/** covid19-baner */
+.covid19-baner {
+    padding: 12px 32px;
+    text-align: center;
+    background-color: #FDEEE6;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.covid19-baner__img {
+    margin-right: 16px;
+}
+.covid19-baner__text {
+    font-size: 1.4rem;
+    line-height: 20px;
+    margin-right: 32px;
+}
+.btn-more {
+    font-size: 1.2rem;
+    border: 1px solid rgb(83, 146, 249);
+    border-radius: 4px;
+    color: rgb(83, 146, 249);
+    transition: all 0.15s ease-in-out 0s;
+    padding: 5px;
+}
+.btn-more:hover {
+    background-color: rgb(83, 146, 249);
+    opacity: 0.7;
+}
+
+
+
+/** -----------container css-------------------------*/
+
+
+
+.TittleContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 543px;
+}
+.TittleContainer__avatar {
+    position: absolute;
+    height: 320px;
+    width: 100%;
+}
+
+.TittleContainer__avatar::before {
+    background: url(https://cdn6.agoda.net/images/MVC/default/background_image/illustrations/bg-agoda-homepage.png) center center / cover no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    border-bottom-left-radius: 48px;
+    z-index: -2;
+}
+.TitleContainer__content {
+    width: 1124px;
+    text-align: center;
+}
+.TitleContainer__content-wrapper {
+    position: relative;
+    padding: 3% 0;
+}
+
+
+
+.WelcomeMassage {
+    color: #ffffff;
+    margin-bottom: 24px;
+}
+
+.WelcomeMassage h1 {
+    margin-top: 0;
+    margin-bottom: 4px;
+    font-size: 2.4rem;
+    line-height: 3.1rem;
+}
+.WelcomeMassage h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 2.0rem;
+    line-height: 2.6rem;
+}
+
+.Infomation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.Information__list {
+    padding: 0 64px;
+    margin: 0;
+    list-style: none;
+    justify-content: center;
+    display: flex;
+    box-shadow: rgb(0 0 0 / 20%) 0px 1px 6px 2px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    z-index: 999;
+}
+
+.Information__list-item {
+    margin-right: 8px;
+    margin-left: 8px;
+    padding-top: 16px;
+    width: 140px;
+    color: var(--text-color);
+    position: relative;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: inline-flex;
+    height: 88px;
+    cursor: pointer;
+}
+
+.Information__list-icon {
+    fill: #4b4f56;
+}
+
+.Information__list-item--active {
+    color: #5392f9;
+    fill: #5392f9;
+}
+
+.Information__list-feture {
+    font-size: 1.6rem;
+    line-height: 2.0rem;
+    font-weight: 400;
+    margin: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    position: relative;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+}
+
+.Information__list-item--note {
+    width: 100%;
+    position: absolute;
+    top: -9px;
+    left: 0px;
+}
+
+.Information__list-line {
+    width: 100%;
+    height: 4px;
+    background-color: rgb(83, 146, 249);
+}
+
+.Informatin__search{
+    width: 100%;
+    animation-duration: 0.3s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    z-index: -1;
+}
+
+.Informatin__search-tab {
+    background-color: hsla(0,0%,100%,.5);
+    margin-top: -16px;
+    padding: 32px 48px 48px;
+    width: 100%;
+    position: relative;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 8px 3px;
+    border-radius: 16px;
+    z-index: -1;
+}
+
+
+
+.searchbox-button {
+    margin-top: 12px;
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+}
+
+
+
+.searchbox-button__child {
+    width: 49.3%;
+}
+
+.searchbox__wrapper {
+    padding: 0;
+    height: 66px;
+    border-radius: 8px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: #fff;
+    border: 1px solid #000000;
+    font-size: 16px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.Iconbox__wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Iconbox__line {
+    width: 1px;
+    height: calc(100% - 20px);
+    background-color: #ccc;
+}
+
+.Iconbox__time{
+    width: 50%;
+    position: relative;
+}
+
+.Iconbox__wrapper i {
+    padding: 12px 16px 12px 14px;
+}
+
+.IconBox__child {
+    width: calc(100% - 60px);
+    font-size: 1.6rem;
+}
+
+.IconBox__child-description {
+    padding: 5px 0;
+}
+
+.IconBox__description-title {
+    color: var(--text-color);
+    padding-right: 34px;
+    width: 100%;
+    line-height: 2.285rem;
+    font-size: 1.6rem;
+    text-align: left;
+}
+.IconBox__description-desc {
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #999999;
+    width: 100%;
+    line-height: 1.75rem;
+    text-align: left;
+}
+
+.Informatin__search-addbox {
+    margin-top: 24px;
+}
+
+.IconBox__child input {
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+.Informatin__search-add {
+    width: 100%;
+    margin-top: 24px;
+    display: inline-block;
+    text-align: left;
+}
+
+.Informatin__search-bundle-save {
+   
+    margin-left: 0px;
+    padding: 4px 8px;
+    display: inline-block;
+    border-radius: 2px;
+    background-color: rgb(225, 45, 45);
+    color: rgb(255, 255, 255);
+}
+
+.Informatin__search-bundle-save p {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    font-weight: 400;
+    margin: 0;
+}
+.Informatin__search-add-card {
+    cursor: pointer; 
+    margin-right: 8px;
+    margin-left: 0px;
+    padding: 12px 24px;
+    -webkit-box-align: center;
+    align-items: center;
+    display: inline-flex;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(221, 223, 226);
+}
+
+.Informatin__search-add-card span {
+    font-size: 1.4rem;
+    line-height: 2.0rem;
+    font-weight: 400;
+    padding: 0 8px;
+}
+
+.Informatin__search-button {
+    margin-top: -32px;
+    width: 100%;
+    z-index: 2;
+}
+
+.btn-search {
+    background-color: rgb(83, 146, 249);
+    font-size: 2.0rem;
+    line-height: 2.6rem;
+    font-weight: 400;
+    padding: 19px 195px;
+    color:  #fff;
+}
+.btn-search:hover {
+    background-color: rgb(145, 182, 241);
+   
+}
+
+
+
+
+/** HomeBody css */
+
+.HomeBody {
+    width: 100%;
+}
+
+.TopDestinationRailStandard {
+    width: 100%;
+    margin: 64px auto;
+}
+
+.TopDestinationRailStandard__title {
+    font-size: 2.4rem;
+    line-height: 3.0rem;
+    font-weight: 500;
+    padding-bottom: 8px;
+    display: block;
+    text-align: center;
+    color: var(--text-color)
+}
+
+.TopDestinationRailStandard__content {
+    width: 100%;
+    position: relative;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    visibility: visible;
+}
+
+.TopDestinationRailStandard__content-list {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    flex: 0 0 auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.TopDestinationRailStandard__content-item {
+    width: 174px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.TopDestinationRailStandard__content-item img{
+    width: 122px;
+    height: 122px;
+    border-width: 1px;
+    border: 1px solid #dddfe2;
+    border-radius: 50%;
+}
+
+.TopDestinationRailStandard__content-item img:hover {
+    animation: hoverImg ease .2s forwards;
+    outline: none;
+    box-shadow: rgb(0 0 0 / 10%) 0px 2px 8px 3px;
+}
+
+@keyframes hoverImg {
+    from {
+        width: 122px;
+        height: 122px;
+    }
+    to {
+        width: 132px;
+        height: 132px;
+    }
+}
+
+.TopDestinationRailStandard__content-city {
+    padding: 12px 0 0;
+    font-weight: 700;
+    line-height: 2.2rem;
+    font-size: 1.6rem;
+}
+.TopDestinationRailStandard__content-description {
+    padding: 4px 0 0;
+    line-height: 1.6rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: rgb(115, 115, 115);
+}
+
+
+
+/** ExploreMore css section */
+
+.ExploreMore {
+    width: 100%;
+    margin: 48px auto;
+    text-align: center;
+   
+}
+
+.ExploreMore h3 {
+    font-size: 2.4rem;
+    line-height: 3.0rem;
+    margin: 8px 0;
+    font-weight: 500;
+}
+
+.ExploreMore__container-list {
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.ExploreMore__container-item {
+    width: 257px;
+    height: 214px;
+    border: 1px solid rgb(221, 223, 226); 
+    box-shadow: none;
+}
+
+.ExploreMore__container-item:hover {
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 8px 3px;
+}
+
+.ExploreMore__container-item img {
+    width: 100%;
+}
+
+.ExploreMore__container-infor {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ExploreMore__container-content {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+}
+
+.ExploreMore__container-detail {
+    font-size: 1.4rem;
+    line-height: 2.0rem;
+    font-weight: 400;
+    color: rgb(115, 115, 115);
+}
+
+
+
+
+
+/** HomesRecommended css */
+
+.HomesRecommended {
+    width: 100%;
+    margin: 48px auto;
+    text-align: center;
+}
+
+.HomesRecommended h3 {
+    font-size: 2.4rem;
+    line-height: 3.0rem;
+    padding: 8px 0;
+    font-weight: 500;
+}
+
+.HomesRecommended__city {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.HomesRecommended__city-list {
+    display: flex;
+ 
+}
+
+
+
+.HomesRecommended__city-item {
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    list-style-type: none;
+    padding: 8px;
+    width: auto;
+    margin-bottom: -2px;
+    border-bottom: 1px solid rgb(221, 223, 226);
+}
+
+.item-active {
+    border-bottom: 2px solid rgb(83, 146, 249);
+}
+
+.HomesRecommended__city-item span{
+    font-size: 1.4rem;
+    line-height: 2.0rem;
+    font-weight: 400;
+    padding: 0 12px;
+}
+
+.HomesRecommended__detail {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.HomesRecommended__detail-list {
+    width: calc(100% - 24px);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.HomesRecommended__detail-item {
+ 
+    margin: 6px 0;
+    width: 266px;
+    height: 298px;
+}
+
+.HomesRecommended__detail-avatar {
+    width: 100%;
+    position: relative;
+}
+
+.HomesRecommended__detail-point {
+    position: absolute;
+    top: 0px;
+    right: 8px;
+    width: 48px;
+    height: 48px;
+}
+
+.HomesRecommended__detail-point svg {
+    fill: #5392f9;  
+}
+
+.HomesRecommended__detail-specifically { 
+    position: absolute;
+    top: 0px;
+    right: 8px;
+    width: 48px;
+    height: 48px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.HomesRecommended__detail-specifically span {
+    margin-left: -4px;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+}
+
+.HomesRecommended__detail-avatar img {
+    width: 100%;
+    height: 196px;
+}
+
+.HomesRecommended__detail-name {
+    padding: 2px;
+    width: 100%;
+    text-align: left;
+}
+
+.HomesRecommended__detail-name span {
+    font-size: 1.4rem;
+    line-height: 2.0rem;
+    font-weight: 500;
+}
+
+.HomesRecommended__detail-information {
+    display: flex;
+    width: 100%;
+    height: 24px;
+    align-items: center;
+    padding: 2px;
+    text-align: left;
+}
+
+.HomesRecommended__detail-rate {
+    display: inline-block;
+}
+
+.HomesRecommended__detail-rate i {
+    color: #e12d2d;
+}
+
+.HomesRecommended__detail-breakpoint  {
+    margin-left: 4px;
+}
+.HomesRecommended__detail-breakpoint svg {
+    width: 12px;
+    height: 100%;
+    fill: #5392f9;
+}
+
+.HomesRecommended__detail-address  {
+    margin-left: 4px;
+}
+.HomesRecommended__detail-address span {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    font-weight: 500;
+    color: #5392f9;
+}
+
+.HomesRecommended__detail-description {
+    padding: 2px;
+    height: 20px;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    font-weight: 400;
+    color: rgb(115, 115, 115);
+}
+
+.HomesRecommended__detail-price {
+    margin-top: 2px;
+    padding: 2px;
+    text-align: left;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+    color: rgb(225, 45, 45);
+}
+
+.HomesRecommended__detail-search {
+    width: 100%;
+    margin-top: 32px;
+}
+
+.btn-search-detail {
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    line-height: 2.0rem;
+    font-weight: 500;
+}
+
+
+
+/* Review css */
+/**  TravelerReviewsStandard */
+
+.TravelerReviewsStandard {
+    width: 100%;
+    text-align: center;
+}
+
+.TravelerReviewsStandard__title {
+    margin: 26px 0 37px;
+    line-height: 3.4rem;
+    font-size: 3.1rem;
+    font-weight: 500;
+}
+
+.TravelerReviewsStandard__cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 -.5%;
+}
+
+.TravelerReviewsStandard__cards-item {
+    width: 367px;
+    border: 1px solid #e9ebee;
+    height: 329px;
+    margin: 10px 0;
+    padding: 24px 32px;
+    border-bottom: 4px solid #75a8f9;
+}
+
+.TravelerReviewsStandard__cards-hotelname {
+    color: #5392f9;
+    font-size: 2.33rem;
+    line-height: 3.33rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+.TravelerReviewsStandard__cards-country {
+    color: #737373;
+    margin: 0 0 16px;
+    font-size: 2.02rem;
+    line-height: 2.29rem;
+    font-weight: 500;
+}
+
+.TravelerReviewsStandard__cards-review {
+    font-weight: 700;
+    font-size: 2.0rem;
+    color: #000000;
+    line-height: 2.6rem;
+    margin: 0;
+    
+}
+
+.ReviewCard__Review {
+    height: 128px;
+}
+
+.TravelerReviewsStandard__cards-reviewmore {
+    color: #5392f9;
+    cursor: pointer;
+    line-height: 2.6rem;
+    font-size: 2.0rem;
+}
+
+.TravelerReviewsStandard__cards-reviewer {
+    margin: 16px 0 0;
+    font-size: 2.0215rem;
+    line-height: 2.887rem;
+    color: #000000;
+}
+
+
+
+ /* Footer css */
+
+/** -----------footer------------------------*/
+
+.footer-top {
+    width: 100%;
+    background-color: rgb(233, 235, 238);
+    color: rgb(115, 115, 115);
+}
+
+.footer-top-box {
+    display: flex;
+    padding: 48px 16px;
+    justify-content: space-between;
+}
+
+.footer-top-box__card {
+    width: 20%;
+    flex-direction: column;
+    display: flex;
+    color: rgb(115, 115, 115);
+    
+}
+
+.footer-top-box__title {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    font-weight: 500;
+    margin: 12px 0px;
+}
+.footer-top-box__item a span{
+    font-size: 1.4rem;
+    line-height: 2.0rem;
+    font-weight: 400;
+    margin: 0px;
+    color: rgb(115, 115, 115);
+}
+
+.footer-top-box__item a:hover {
+    text-decoration: underline rgb(115, 115, 115);
+}
+
+
+.footer-center{
+    width: 100%;
+}
+
+.footer-center-box {
+    display: flex;
+    padding: 50px 16px;
+    
+}
+
+.footer-center-box__card {
+    width: calc(100% / 6);
+    flex-direction: column;
+    display: flex;
+    padding: 10px;
+    /* height: 567px; */
+}
+
+.footer-center-box__title {
+    padding-bottom: 5px;
+    line-height: 1.3rem;
+    font-size: 1.3rem;
+    color: #000000;
+}
+
+.footer-center-box__item a {
+    color: #3c3c3c;
+    line-height: 1.3rem;
+    font-size: 1.0rem;
+}
+
+.footer-center-box__item a:hover {
+    color: #2f9eed ;
+}
+
+
+.footer-bot{
+    width: 100%;
+    padding-top: 48px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: rgb(42, 42, 46);
+    color: rgb(215, 215, 219);
+}
+
+.footer-bot__information {
+    width: 100%;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    font-weight: 300;
+    color: #D7D7DB;
+    margin: 8px;
+}
+
+.footer-bot__trademark {
+    width: 100%;
+    margin: 35px auto 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Copyrights-machine {
+    color: #d7d7db;
+    font-size: 1.3rem;
+    line-height: 1.857rem;
+    padding: 48px 0 12px;
+}
+
